@@ -71,3 +71,4 @@ function loanCalculator (principle: number, interestRate: number, months = 12): 
     payment = principle * interest / (1 - (Math.pow(1/(1 + interest), months)));
     return payment.toFixed(2);
 }
+
