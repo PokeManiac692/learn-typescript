@@ -24,13 +24,13 @@ let sortDescending: compareFunctionType = (a, b) => {
 /*  sortDescending is a comparison function that tells the sort method how to sort 
     numbers in ascending order. */
 let sortAscending: compareFunctionType = (a, b) => {
-if (a > b) {
-    return 1;
-} else if (b > a) {
-    return -1;
-} else {
-    return 0;
-}
+    if (a > b) {
+        return 1;
+    } else if (b > a) {
+        return -1;
+    } else {
+        return 0;
+    }
 }
 
 /*  The buildArray function builds an array of unique random numbers containing the number 
@@ -65,9 +65,9 @@ console.log(myArray2);
 /*  EXERCISE 2
     TODO: Update the LoanCalculator function. */
 
-function loanCalculator (principle, interestRate, months) {
-    let interest = interestRate / 1200;   // Calculates the monthly interest rate
-    let payment;
+function loanCalculator (principle: number, interestRate: number, months = 12): string {
+    let interest: number = interestRate / 1200;   // Calculates the monthly interest rate
+    let payment: Number;
     payment = principle * interest / (1 - (Math.pow(1/(1 + interest), months)));
     return payment.toFixed(2);
 }
