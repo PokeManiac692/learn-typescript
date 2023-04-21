@@ -6,7 +6,7 @@ Choose the best response for each of the questions below. Then select **Check yo
 
 What happens when you add code to a namespace?
 
-(x)Declarations are removed from the global namespace.{{Namespaces remove declarations form the global namespace, providing a context for names and helping to reduce naming collisions.}}
+(**X**)Declarations are removed from the global namespace.{{Namespaces remove declarations form the global namespace, providing a context for names and helping to reduce naming collisions.}}
 
 ()Declarations removed from the global namespace only if the namespace is in a separate file.{{Namespaces don’t have to be in separate files to be removed from the global namespace.}}
 
@@ -16,7 +16,7 @@ What happens when you add code to a namespace?
 
 How do you make a component available outside the scope of a namespace?
 
-(x)Add the `export` keyword to the declaration.{{Adding the `export` keyword makes the component available for use outside of the namespace.}}
+(**X**)Add the `export` keyword to the declaration.{{Adding the `export` keyword makes the component available for use outside of the namespace.}}
 
 ()Add the `import` keyword to the file that will use the component.{{The `import` keyword can be used to create an alias that describes nested namespaces.}}
 
@@ -26,7 +26,7 @@ How do you make a component available outside the scope of a namespace?
 
 What is the option that tells the TypeScript compiler to output multiple files using and containing namespaces into a single JavaScript file?
 
-(x)`--outfile`{{The `--outfile` option instructs the compiler to output a single JavaScript file.}}
+(**X**)`--outfile`{{The `--outfile` option instructs the compiler to output a single JavaScript file.}}
 
 ()`--multifile`{{This is not the correct option to use in this situation.}}
 
